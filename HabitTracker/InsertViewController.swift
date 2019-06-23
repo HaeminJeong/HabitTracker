@@ -33,38 +33,6 @@ class InsertViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        if let week = detailWeek {
-            textTitle.text = week.value(forKey: "title") as? String
-            mon = week.value(forKey: "monday") as? Bool
-            tue = week.value(forKey: "tuesday") as? Bool
-            wed = week.value(forKey: "wednesday") as? Bool
-            thu = week.value(forKey: "thursday") as? Bool
-            fri = week.value(forKey: "friday") as? Bool
-            sat = week.value(forKey: "saturday") as? Bool
-            sun = week.value(forKey: "sunday") as? Bool
-           
-        }
-        if mon {
-            buttonMon.backgroundColor = UIColor.green
-        }
-        if tue {
-            buttonTue.backgroundColor = UIColor.green
-        }
-        if wed {
-            buttonWen.backgroundColor = UIColor.green
-        }
-        if thu {
-            buttonThu.backgroundColor = UIColor.green
-        }
-        if fri {
-            buttonFri.backgroundColor = UIColor.green
-        }
-        if sat {
-            buttonSat.backgroundColor = UIColor.green
-        }
-        if sun {
-            buttonSun.backgroundColor = UIColor.green
-        }
     }
     
     func getContext () -> NSManagedObjectContext {
